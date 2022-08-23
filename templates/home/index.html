@@ -1,2 +1,131 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block content %}
+</div> 
+<div class="home-left">
+    <h1>Learn new skills in a<br> novel and distinct<br> way by studying<br>online.</h1>
+    <p>E-elimu offers accredited and custom training<br> programs. E-elimu can help you master your skill<br> from anywhere and accomplish your goals.</p>
+    <button type="text" class="join">Join Us</button>
+</div>
+<img src="{% static 'images/image 3.png' %}" class="image1">
+    <img src="{% static 'images/image 2 (1).png' %}" class="image2">
+    <img src="{% static 'images/image 1 (1).png' %}" class="image3">
+<div class="home-left">
+<img src="{% static 'images/Rectangle_21__1_-removebg-preview.png' %}" class="image4">
+</div>
+{% comment %} PARTNERS {% endcomment %}
+<div class="container">
+        <div class="logos">
+            <img src="{% static 'images/Coursera.png' %}">
+            <img src="{% static 'images/ALISON - png.png' %}">
+            <img src="{% static 'images/Udacit.png' %}">
+            <img src="{% static 'images/Udemy.png' %}">
+        </div>
+</div>
+{% comment %} COURSES {% endcomment %}
+<div class="search-bar">
+    <div class="course">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h4>Course Name</h4>
+    </div>
+    <div class="tutor">
+        <i class="fa-solid fa-user"></i>
+        <h4>Tutor Name</h4>
+        
+    </div>
+    </div>
+    <div class="search-bar-two">
+        <div class="popular">
+            <i class="fa-solid fa-eye"></i>
+            <h4>Popular Courses</h4>
+        </div>
+        <div class="select">
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+   
+</div>
+    <div class="course-description1">
+        <div class="web">
+        <h4>Web</h4>
+        <p>Students study how to<br> construct and manage high-<br>quality web pages, how to<br> analyze websites critically,<br> the significance of web<br>design standards, and how<br> to produce and work with<br> images.</p>
+        <h5>8 weeks 60 hours/Week</h5>
+        <h3>Now open</h3>
+        </div>
 
+        <div class="cloud">
+            <h4>Cloud</h4>
+            <p>An overview of cloud<br>computing is provided<br> throughout the course,<br> covering everything from<br> apps and administration to<br>programming and<br> architecture.</p>
+            <h5>12 weeks 60 hours/Week</h5>
+            <h3>Now open</h3>
+        </div>
+
+        <div class="networking">
+            <h4>Networking</h4>
+            <p>The course is a thorough<br>curriculum created to impart<br> networking and<br>internetworking technical abilities to students. In<br> addition to LANs and WANs,<br> the OSI model, cabling, IP<br> addressing, subnetting, etc.</p>
+            <h5>8 weeks 60 hours/Week</h5>
+            <h3>Now open</h3>
+        </div>
+    </div>
+    <div class="course-description2">
+        <div class="design">
+        <h4>UI/UX design</h4>
+        <p>We offers practical, skill-<br> based instruction centered<br> around a visual<br>communications perspective<br>and bring a design-centric<br> approach to user interface<br> and user experience design.
+            </p>
+        <h5>8 weeks 60 hours/Week</h5>
+        <h3>Coming soon</h3>
+        </div>
+
+        <div class="mobile">
+            <h4>Mobile</h4>
+            <p>Students are introduced to<br>mobile application design,<br>development, and <br>programming technologies <br>in this course. </p>
+            <h5>8 weeks 60 hours/Week</h5>
+            <h3>Now open</h3>
+        </div>
+
+        <div class="devops">
+            <h4>Devops</h4>
+            <p>The curriculum equips<br> students with the professional skills necessary<br> to manage and track various<br> source code versions,<br> automate testing processes<br> using a variety of tools.</p>
+            <h5>8 weeks 60 hours/Week</h5>
+            <h3>Coming soon</h3>
+        </div>
+    </div>
+
+    {% comment %} SERVICES {% endcomment %}
+    <div class="services">
+        <h2>Why choose<br>E-elimu </h2>
+        <p>We add value to our students<br>journeys.We got you from<br> beginning to end with relevant<br> market courses</p>
+        <div class="service-description1">
+            <div class="desc1">
+                <h3>Schedule learning</h3>
+                <p>You can schedule learning<br> to  the time that you want.</p>
+            </div>
+            <div class="desc2">
+                <h3>Recorded Sessions</h3>
+                <p>Lecture recordings that<br> enable students to more<br> actively engage with the<br> course material.</p>
+            </div>
+        </div>
+        <div class="service-description2">
+            <div class="desc1">
+                <h3>Practical learning</h3>
+                <p>You can schedule learning<br> to  the time that you want.</p>
+            </div>
+            <div class="desc2">
+                <h3>Test</h3>
+                <p>You can schedule learning<br> to  the time that you want </p>
+            </div>
+        </div>
+    </div>
+
+{% comment %} SUBSCRIBE {% endcomment %}
+<div class="subscription">
+    <h2>Subscribe to get updates<br>on new courses <h2>
+    <div class="email_container">
+        <p>Enter your email</p>
+        <button>Subscribe</button>
+    </div>
+</div>
+
+
+
+
+{% endblock content  %}
