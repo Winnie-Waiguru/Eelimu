@@ -4,149 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://kit.fontawesome.com/60979908e3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href={% static 'css/style.css' %}> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/60979908e3.js" crossorigin="anonymous"></script>
     <title>E-elimu</title>
 </head>
-{% comment %} HOME {% endcomment %}
-<section class="home">
-<div class="heading">  
-<nav>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Courses</a></li>
-    <li><a href="#">Contact</a></li>
-</nav>
-<button type="text" class="signIn">Sign In</button>
-<button type="text" class="signUp">Sign Up</button>
+<body>
+    {% comment %} HOME {% endcomment %}
+<div class="heading">
+    <img src="{% static 'images/Logo.png' %}">
+    <nav>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </nav>
+    <div class="nav-button">
+    <button type="text" class="login">Log In</button>
+    <button type="text" class="register">Register</button>
+    </div>
+</div> 
+<div class="home-left">
+    <h1>Learn new skills in a<br> novel and distinct<br> way by studying<br>online.</h1>
+    <p>E-elimu offers accredited and custom training<br> programs. E-elimu can help you master your skill<br> from anywhere and accomplish your goals.</p>
+    <button type="text" class="join">Join Us</button>
 </div>
-<div class="homeRight">
-   <img src={% static 'images/image 1.png' %}>
+<img src="{% static 'images/image 3.png' %}" class="image1">
+    <img src="{% static 'images/image 2 (1).png' %}" class="image2">
+    <img src="{% static 'images/image 1 (1).png' %}" class="image3">
+<div class="home-left">
+<img src="{% static 'images/Rectangle_21__1_-removebg-preview.png' %}" class="image4">
 </div>
-<div class="homeLeft">
-    <h1>Get the best tutors<br> through this platform</h1>
-    <p>Helping students of all ages thrive in an easy and<br>interesting way online. </p>
-    <button type="text" class="starting">Get Started</button>
-</div>
-<div class="extras">
-        <div class="years">
-        <i class="fa-solid fa-book-open-reader"></i>    
-        <h3>5 years</h3>
-        <p>Offers a better way to<br> learn.</p>
+{% comment %} PARTNERS {% endcomment %}
+<div class="container">
+        <div class="logos">
+            <img src="{% static 'images/Coursera.png' %}">
+            <img src="{% static 'images/ALISON - png.png' %}">
+            <img src="{% static 'images/Udacit.png' %}">
+            <img src="{% static 'images/Udemy.png' %}">
         </div>
-        <div class="learners">
-        <i class="fa-solid fa-user"></i>   
-        <h3>10K +</h3>
-        <p>Helped our learners<br>thrive.</p>
+</div>
+{% comment %} COURSES {% endcomment %}
+<div class="search-bar">
+    <div class="course">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h4>Course Name</h4>
+    </div>
+    <div class="tutor">
+        <i class="fa-solid fa-user"></i>
+        <h4>Tutor Name</h4>
+        
+    </div>
+    </div>
+    <div class="search-bar-two">
+        <div class="popular">
+            <i class="fa-solid fa-eye"></i>
+            <h4>Popular Courses</h4>
         </div>
-        <div class="course">
-        <i class="fa-solid fa-book-open"></i>
-        <h3>100+</h3>
-        <p>Offers a variety of subjects/Courses.</p>
+        <div class="select">
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+   
+</div>
+    <div class="course-description1">
+        <div class="web">
+        <h4>Web</h4>
+        <p>Students study how to<br> construct and manage high-<br>quality web pages, how to<br> analyze websites critically,<br> the significance of web<br>design standards, and how<br> to produce and work with<br> images.</p>
+        <h5>8 weeks 60 hours/Week</h5>
+        <h3>Now open</h3>
         </div>
 
+        <div class="cloud">
+            <h4>Cloud</h4>
+            <p>An overview of cloud<br>computing is provided<br> throughout the course,<br> covering everything from<br> apps and administration to<br>programming and<br> architecture.</p>
+            <h5>12 weeks 60 hours/Week</h5>
+            <h3>Now open</h3>
+        </div>
+
+        <div class="networking">
+            <h4>Networking</h4>
+            <p>The course is a thorough<br>curriculum created to impart<br> networking and<br>internetworking technical abilities to students. In<br> addition to LANs and WANs,<br> the OSI model, cabling, IP<br> addressing, subnetting, etc.</p>
+            <h5>8 weeks 60 hours/Week</h5>
+            <h3>Now open</h3>
+        </div>
+    </div>
+    <div class="course-description2">
+        <div class="design">
+        <h4>UI/UX design</h4>
+        <p>We offers practical, skill-<br> based instruction centered<br> around a visual<br>communications perspective<br>and bring a design-centric<br> approach to user interface<br> and user experience design.
+            </p>
+        <h5>8 weeks 60 hours/Week</h5>
+        <h3>Coming soon</h3>
+        </div>
+
+        <div class="mobile">
+            <h4>Mobile</h4>
+            <p>Students are introduced to<br>mobile application design,<br>development, and <br>programming technologies <br>in this course. </p>
+            <h5>8 weeks 60 hours/Week</h5>
+            <h3>Now open</h3>
+        </div>
+
+        <div class="devops">
+            <h4>Devops</h4>
+            <p>The curriculum equips<br> students with the professional skills necessary<br> to manage and track various<br> source code versions,<br> automate testing processes<br> using a variety of tools.</p>
+            <h5>8 weeks 60 hours/Week</h5>
+            <h3>Coming soon</h3>
+        </div>
+    </div>
+
+    {% comment %} SERVICES {% endcomment %}
+    <div class="services">
+        <h2>Why choose<br>E-elimu </h2>
+        <p>We add value to our students<br>journeys.We got you from<br> beginning to end with relevant<br> market courses</p>
+        <div class="service-description1">
+            <div class="desc1">
+                <h3>Schedule learning</h3>
+                <p>You can schedule learning<br> to  the time that you want.</p>
+            </div>
+            <div class="desc2">
+                <h3>Recorded Sessions</h3>
+                <p>Lecture recordings that<br> enable students to more<br> actively engage with the<br> course material.</p>
+            </div>
+        </div>
+        <div class="service-description2">
+            <div class="desc1">
+                <h3>Practical learning</h3>
+                <p>You can schedule learning<br> to  the time that you want.</p>
+            </div>
+            <div class="desc2">
+                <h3>Test</h3>
+                <p>You can schedule learning<br> to  the time that you want </p>
+            </div>
+        </div>
+    </div>
+
+{% comment %} SUBSCRIBE {% endcomment %}
+<div class="subscription">
+    <h2>Subscribe to get updates<br>on new courses <h2>
+    <div class="email_container">
+        <p>Enter your email</p>
+        <button>Subscribe</button>
+    </div>
+</div>
+{% comment %} FOOTER {% endcomment %}
+<section class="footer">
+    <img src="{% static 'images/Logo.png' %}">
+    <p>Join us today for<br> quality education</p>
+    <div class="socials">
+    <div class="facebook"><i class="fa-brands fa-facebook-f"></i>
+    </div>
+    <div class="twitter"><i class="fa-brands fa-twitter"></i>
+    </div>
+    <div class="linkedin"><i class="fa-brands fa-linkedin-in"></i>
+    </div>
+</div>
+
+<div class="footer-description">
+    <div class="links">
+        <h4>Useful links</h4>
+        <p>Home<br>About<br>Service</p>
+    </div>
+<div class="information">
+    <h4>Information</h4>
+    <p>Join us<br>Courses<br>Blogs<br>News</p>
+</div>
+<div class="support">
+    <h4>Support</h4>
+    <p>FAQ's<br>Support Centre<br>Help Centre</p>
+</div>
 </div>
 </section>
-{% comment %} about {% endcomment %}
-<section class="about">
-    <div class="aboutLeft">
-        <img src={% static 'images/image_2-removebg-preview.png' %}>
-    </div>
-    <div class="aboutRight">
-        <h1>Why you should choose us <br>and why we are the best</h1>
-        <p>E-elimu is an e-learning platform connected with a collection<br> of interactive online services that offer information, tools, and<br> resources to support and improve the management and<br>delivery of education to trainers, students, and others involved<br> in the field.</p>
-    </div>
-</section>
-  {% comment %}SUBJECTS  {% endcomment %}
- <section class=" subjects">
-    <h1>We provide many courses </h1>
-    <p>We offer various kinds of courses for elementary, secondary,<br> and higher education. We invite all students to learn with us.</p>
-        <div class="choices">
-        <button class="choice1">Primary</button>
-        <button class="choice2">Secondary</button>
-        <button class="choice3">Post Secondary</button>
-        </div>
-        <div class="offers">
-            <div class="offer1">
-                <h3>UI/UX Design</h3>
-                <p>Instead of focusing solely<br>on marketing or<br>programming, the UI/UX<br>Design Specialization<br>course offers practical,<br>skill-based training<br>centered around a visual<br>communications<br>perspective.<br></p>
-                <h4>KES. 12,000</h4>
-                <button class="join">Join</button>
-            </div>
-            <div class="offer2">
-                <h3>Web development</h3>
-                <p>The goal of this course is<br>to introduce students to<br>the principles of web<br>development through <br>project-based learning.</p>
-                <h4>KES. 15,000</h4>
-                <button class="join2">Join</button>
-            </div>
-            <div class="offer3">
-                <h3>Mobile development</h3>
-                <p>Students are introduced<br>to mobile application<br>design, development,<br>and programming<br>technologies in this<br>
-                course.</p>
-                <h4>KES. 20,000</h4>
-                <button class="join3">Join</button>
-             </div>
-        </div>
-        <div class="see">
-            <h4>See more</h4>
-            <i class="fa-solid fa-arrow-right"></i>
-        </div>
-</section>
- {% comment %}COMMENTS  {% endcomment %}
- <section class="comment">      
-        <h2 class="commenting"> What people are saying</h2>
-        <div class="comments">
-            <div class="comment1">
-                <div class="left1"><i class="fa-solid fa-quote-left"></i></div>
-                <p>People who wish to learn more about<br> design can access a vast collection of<br>knowledge and experience through e-elimu.</p>
-                <div class="left"><i class="fa-solid fa-quote-right"></i></div>
-                <div class="person1">
-                <img src={% static 'images/Ellipse 2.png' %}>
-                <h4>Wafula Wanyama</h4> 
-                </div>
-                </div>
-            <div class="comment2">
-                <div class= right1><i class="fa-solid fa-quote-left"></i></div>
-                <p>E-elimu provides real-time feedback,<br>which has tremendous value for learning.</p>    
-               <div class="right"> <i class="fa-solid fa-quote-right"></i></div>
-                <div class="person2">
-                    <img src={% static 'images/Ellipse 3.png' %}>
-                <h4>Nikarasinga  Ajuga</h4>     
-                </div>
-            </div>
-        </div>
-        <div class="next_comments">
-            <h4>Comments</h4>
-            <i class="fa-solid fa-arrow-right"></i>
-           </div>
-</section>
-{% comment %} CONTACTS {% endcomment %}
-<section class="contacts">
-    <div class="contact_info">
-        <h2>Subscribe to our newsletter</h2>
-        <div class="email_container">
-            <p>Email</p>
-            <button>Subscribe</button>
-        </div>
-    </div>
-    <div class="links">
-    <div class="first_links">
-        <p>Home<br>Blogs<br>Testimonials<br>Events</p>
-    </div>
-    <div class="second_links">
-        <p>Helpful links<br>Services<br>Supports<br>Privacy policy<br> Terms and Conditions</p>  
-    </div>
-    <div class="third_links">
-        <p>Follow us:<br>
-            <i class="fab fa-facebook-f"><u>Facebook</u></i><br>
-            <i class="fab fa-twitter"><u>Twitter</u></i><br>
-            <i class="fab fa-linkedin-in"><u>LinkedIn</u></i><br>
-    </div>
-    </div>
-</section>
-<body>
-    
+
 </body>
 </html>
-
